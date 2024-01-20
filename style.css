@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #02ffd7, #01ff3d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    width: 20em;
+    /* height: 30em; */
+    background-color: #030004;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.screen {
+    height: 6rem;
+    background-color: #242625;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+    font-size: 3em;
+    font-family: 'Roboto Mono', monospace;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-shrink: 20px; */
+}
+
+.calcBody {
+    padding: 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    font-size: 20px;
+}
+
+.calcBody div {
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    margin: 2px;
+    height: 4.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+
+.one {
+    background-color: #778898!important;
+}
+
+.second {
+    background-color: #fea501!important;
+}
+
+.calcBody div:nth-child(17) {
+    grid-column: 1/3;
+}
