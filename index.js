@@ -65,12 +65,7 @@ egual.addEventListener("click", () => {
 
 arth.forEach((e) => {
     e.addEventListener("click", (x) => {
-        if (x.target.innerHTML.length == 1) {
-            screenChange(x.target.attributes.arth.value)
-        } else {
-            screenChange("/")
-        }
-
+        screenChange(x.currentTarget.attributes.arth.value)
     })
 })
 
